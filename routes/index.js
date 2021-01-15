@@ -3,7 +3,7 @@ const sendMail = require("./mail.controller");
 const router = Router();
 
 router.get("/", (req, res, next) => {
-  return res.send("testing", req.body);
+  return res.send(`testing, ${req.body}`);
 });
 
 router.post("/sendmail", async (req, res, next) => {
