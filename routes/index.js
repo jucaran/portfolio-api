@@ -6,6 +6,10 @@ router.get("/", (req, res, next) => {
   console.log(req);
   return res.send(req.body);
 });
+router.post("/", (req, res, next) => {
+  console.log(req);
+  return res.send(req.body);
+});
 
 router.post("/sendmail", async (req, res, next) => {
   //we try to send the email
