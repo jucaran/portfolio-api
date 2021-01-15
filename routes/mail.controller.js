@@ -49,7 +49,7 @@ const sendMail = async ({ name, email, message }) => {
                 color: black;
                 ">
               <p>Nuevo mensaje desde el portfoli!</p>
-              <p>Nombre:  ${email}!</p>
+              <p>Nombre:  ${name}!</p>
               <p>Email:  ${email}!</p>
               <p>
                 Mensaje: ${message}
