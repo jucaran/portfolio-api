@@ -48,10 +48,11 @@ const sendMail = async ({ name, email, message }) => {
                 background: white;
                 color: black;
                 ">
-              <p>New message from  ${name}!</p>
+              <p>Nuevo mensaje desde el portfoli!</p>
+              <p>Nombre:  ${email}!</p>
               <p>Email:  ${email}!</p>
               <p>
-                ${message}
+                Mensaje: ${message}
               </p>
             </div>
           </body>
