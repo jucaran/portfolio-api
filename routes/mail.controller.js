@@ -14,8 +14,9 @@ let transporter = nodemailer.createTransport(mg(auth));
 const sendMail = async ({ name, email, message }) => {
   try {
     let info = await transporter.sendMail({
-      from: `Portfolio, <${email}>`,
+      from: `me@sandbox.mgsend.net`,
       to: "juan.castro.arancibia@gmail.com",
+      subject: "New mail from portfolio!",
       text: `New email from portfolio! 
         name: ${name}
         email: ${email},
